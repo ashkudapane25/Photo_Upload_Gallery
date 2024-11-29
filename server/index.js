@@ -5,7 +5,7 @@ const cors = require("cors");  // Import cors package
 
 // CORS configuration
 const corsOptions = {
-  origin: "http://localhost:5173",  // Allow your frontend's URL
+  origin: "https://photo-upload-gallery-frontend.onrender.com",  // Allow your frontend's URL
   methods: "GET, POST",  // Allowed HTTP methods
   allowedHeaders: "Content-Type,Authorization",  // Allowed headers
 };
