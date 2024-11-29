@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/v1/upload/images"); // Adjust endpoint as needed
+        const response = await fetch("https://photo-upload-gallery-backend.onrender.com/api/v1/upload/images"); // Adjust endpoint as needed
         const data = await response.json();
 
         if (response.ok) {
@@ -39,7 +39,7 @@ function App() {
       const formData = new FormData();
       formData.append('imageFile', file); // Must match the name used in your backend
 
-      const response = await fetch("http://localhost:4000/api/v1/upload/imageUpload", {
+      const response = await fetch("https://photo-upload-gallery-backend.onrender.com/api/v1/upload/imageUpload", {
         method: 'POST',
         body: formData,
       });
